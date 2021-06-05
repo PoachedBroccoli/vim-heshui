@@ -16,7 +16,7 @@ let g:colors_name = "heshui"
 
 
 function! s:Color (group, bg, fg, gui)
-    let cs  = 'highlight ' . a:group . ' '
+    let cs  = 'highlight! ' . a:group . ' '
     if !empty(a:bg)
         let cs .= 'guibg=' . a:bg[0] . ' '
         let cs .= 'ctermbg=' . a:bg[1] . ' '
